@@ -1,0 +1,38 @@
+.navigation_bar {
+    background-color: #fff;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    letter-spacing: -.4px;
+    line-height: 1;
+    min-height: 100%;
+}
+
+.navigation {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1495px;
+    padding: 34px 30px;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.justify-content-end {
+    align-items: center;
+    display: flex;
+}
+
+Nav {
+    color: #212529;
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: -.3px;
+    margin-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}

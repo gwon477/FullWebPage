@@ -1,31 +1,27 @@
 .App {
   text-align: left;
-  font-family: Noto Sans KR,Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,sans-serif;
+  font-family: Noto Sans KR, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .main-page_title {
-  color: #212529;
-  font-stretch: normal;
-  font-weight: 600;
-  letter-spacing: -1.5px;
-  line-height: 1.32;
-  font-size: 40px;
   margin-top: 34px;
+  color: #212529;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -.8px;
+  line-height: 1.32;
+  margin-bottom: 24px;
 }
 
 .main-page_sub-title {
   color: #212529;
   font-size: 20px;
-  letter-spacing: -1.5px;
+  letter-spacing: -.4px;
   line-height: 1.6;
   margin-bottom: 60px;
-  margin-top: 20px;
-  
+  margin-top: 24px;
+
 }
 
 .start {
@@ -62,6 +58,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
