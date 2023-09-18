@@ -4,24 +4,14 @@
 }
 
 
-.main-page_title {
-  margin-top: 34px;
-  color: #212529;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: -.8px;
-  line-height: 1.32;
-  margin-bottom: 24px;
+
+body {
+  padding-top: 70px;
 }
 
-.main-page_sub-title {
-  color: #212529;
-  font-size: 20px;
-  letter-spacing: -.4px;
-  line-height: 1.6;
-  margin-bottom: 60px;
-  margin-top: 24px;
-
+.navbar {
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
 }
 
 .start {
@@ -31,6 +21,85 @@
 .end {
   opacity: 1;
   transition: opacity 0.5s;
+}
+
+/* Mainpage title */
+.main-page_title {
+  color: #212529;
+  font-stretch: normal;
+  letter-spacing: -1.5px;
+  line-height: 1.32;
+  font-size: 40px;
+  margin-top: 34px;
+  font-weight: 600;
+}
+
+/* 넓은화면 스타일링 */
+@media (min-width: 768px) {
+  .main-page_title_line-break {
+    display: none;
+  }
+}
+
+.main-page_sub-title {
+  color: #212529;
+  font-size: 20px;
+  letter-spacing: -1.5px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/* MainPage 이미지 슬라이드 */
+.main-page_slide-image {
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* MainPage 인포 */
+.main-page_info {
+  box-sizing: border-box;
+  background-color: #2F3438;
+  margin: 80px 0 100px;
+  padding: 7% 0 10px 0;
+}
+
+.main-page_info-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-page_info-title {
+  flex-grow: 1;
+  margin: 20px 0 0 5%;
+  color: #ffff;
+  letter-spacing: -1.5px;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+/* 넓은화면 스타일링 */
+@media (min-width: 768px) {
+  .main-page_info-description {
+    flex-grow: 1;
+    margin-right: 5%;
+    background-color: #3f474d;
+    border-radius: 4px;
+    padding: 50px;
+    color: #ffff;
+    font-size: 10px;
+  }
+}
+
+.main-page_info-description {
+  flex-grow: 1;
+  background-color: #3f474d;
+  border-radius: 4px;
+  padding: 50px;
+  color: #ffff;
+  font-size: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -62,4 +131,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+footer {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer {
+  border-top: 1px solid #dadce0;
+  width: 100%;
+}
+
+.footermain {
+  background-color: #fff;
+  color: #828c94;
+  margin: 0 auto;
+}
+
+.footertitle {
+  color: #3f474d;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.36px;
+  margin-bottom: 16px;
+}
+
+.footerlink {
+  display: flex;
+}
+
+.linkimg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }

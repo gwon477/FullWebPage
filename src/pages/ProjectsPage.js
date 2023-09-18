@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap';
 import { useState, useEffect, useCallback } from 'react';
 import './ProjectsPage.css'
+import '../App.css'
 
 
 function ProjectPage() {
@@ -36,40 +37,72 @@ function ProjectPage() {
     }, []);
 
     return (
-        <div>
-            <Container as='div' className='content'>
-                <div>
-                    <div className={`start ${first}`}>
-                        <h1 className='projectpage_title'>우리들의 이야기</h1>
-                    </div>
-                    <div className={`start ${second}`}>
-                        <p className='projectpage_subtitle'>Kakao Enterprise Academy에서 우리가 발전하는 과정입니다.</p>
-                    </div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <div className={`start ${third}`}>
-                        <h1>포스팅 내용</h1>
+        <Container>
+            <div>
+                <div className={`start ${first}`}>
+                    <h1 className='projectpage_title'>우리들의 이야기</h1>
+                </div>
+                <div className={`start ${second}`}>
+                    <p className='projectpage_subtitle'>Kakao Enterprise Academy에서 우리가 발전하는 과정과 결과입니다.</p>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className={`start ${third}`}>
+                    <div>
+                        <hr />
+                        <div className='postinglist'>
+                            <h3>첫 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
+                        <div className='postinglist'>
+                            <h3>두번쩨 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
+                        <div className='postinglist'>
+                            <h3>세번쨰 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
+                        <div className='postinglist'>
+                            <h3>네번쨰 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
+                        <div className='postinglist'>
+                            <h3>다섯번째 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
+                        <div className='postinglist'>
+                            <h3>여섯번째 포스팅은 무엇일까?</h3>
+                            <p>발행일</p>
+                            <hr />
+                        </div>
                     </div>
                 </div>
-            </Container>
-            <footer className='footer'>
-                <div className='footermain'>
-                    <ul className='footer_sns'>
-                        <li className='footer_sns_item'>
-                            <img src='/lbj-notion-0-1@2x.png' onClick={onLbjNotion01ImageClick} />
-                        </li>
-                        <li className='footer_sns_item'>
-                            <img src='/figma-logo-icon-147289-1@2x.png' onClick={onFigmaLogoIcon1472891ImageClick} />
-                        </li>
-                        <li className='footer_sns_item'>
-                            <img src='/25231-1@2x.png' onClick={onImageClick} />
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+                <footer className='footer'>
+                    <div className='footermain'>
+                        <h1 className='footertitle'>Kakao Enterprise Academy</h1>
+                        <ul className='footerlink'>
+
+                            <img className='linkimg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/100px-Notion-logo.svg.png	'
+                                onClick={onLbjNotion01ImageClick} />
+
+                            <img className='linkimg' src='	https://cdn-icons-png.flaticon.com/512/889/889192.png'
+                                onClick={onImageClick} />
+
+                            <img className='linkimg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/64px-Figma-logo.svg.png'
+                                onClick={onFigmaLogoIcon1472891ImageClick} />
+
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </Container>
     );
 }
 export default ProjectPage;

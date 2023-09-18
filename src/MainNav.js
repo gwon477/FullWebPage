@@ -2,20 +2,19 @@
 
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import logoNav from './img/logo-nav.png';
-import './Nav.css';
 
 function MainNav() {
     // 페이지 이동 함수
     let navigate = useNavigate();
 
     return (
-        <Navbar expand="lg" className='navigation_bar' >
-            <Container className='navigation'>
+
+        <Navbar className="bg-white" expand="lg" bg="light" data-bs-theme="light" fixed="top">
+            <Container>
                 <Navbar.Brand onClick={() => { navigate('/') }}>
                     <img
                         alt=""
-                        src={logoNav}
+                        src='img/logo-nav.png'
                         width="100"
                         height="30"
                         className="d-inline-block align-top"

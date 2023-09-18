@@ -191,4 +191,5 @@ img {
     text-align: center;
     user-select: none;
     width: calc(100% - 60px);
+    cursor: pointer;
 }
