@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  font-family: Noto Sans KR,Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,sans-serif;
+  font-family: Noto Sans KR, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
 }
 
 .App-logo {
@@ -8,24 +8,13 @@
   pointer-events: none;
 }
 
-.main-page_title {
-  color: #212529;
-  font-stretch: normal;
-  font-weight: 600;
-  letter-spacing: -1.5px;
-  line-height: 1.32;
-  font-size: 40px;
-  margin-top: 34px;
+body {
+  padding-top: 70px;
 }
 
-.main-page_sub-title {
-  color: #212529;
-  font-size: 20px;
-  letter-spacing: -1.5px;
-  line-height: 1.6;
-  margin-bottom: 60px;
-  margin-top: 20px;
-  
+.navbar {
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
 }
 
 .start {
@@ -35,6 +24,85 @@
 .end {
   opacity: 1;
   transition: opacity 0.5s;
+}
+
+/* Mainpage title */
+.main-page_title {
+  color: #212529;
+  font-stretch: normal;
+  letter-spacing: -1.5px;
+  line-height: 1.32;
+  font-size: 40px;
+  margin-top: 34px;
+  font-weight: 600;
+}
+
+/* 넓은화면 스타일링 */
+@media (min-width: 768px) {
+  .main-page_title_line-break {
+    display: none;
+  }
+}
+
+.main-page_sub-title {
+  color: #212529;
+  font-size: 20px;
+  letter-spacing: -1.5px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/* MainPage 이미지 슬라이드 */
+.main-page_slide-image {
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* MainPage 인포 */
+.main-page_info {
+  box-sizing: border-box;
+  background-color: #2F3438;
+  margin: 80px 0 100px;
+  padding: 7% 0 10px 0;
+}
+
+.main-page_info-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-page_info-title {
+  flex-grow: 1;
+  margin: 20px 0 0 5%;
+  color: #ffff;
+  letter-spacing: -1.5px;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+/* 넓은화면 스타일링 */
+@media (min-width: 768px) {
+  .main-page_info-description {
+    flex-grow: 1;
+    margin-right: 5%;
+    background-color: #3f474d;
+    border-radius: 4px;
+    padding: 50px;
+    color: #ffff;
+    font-size: 10px;
+  }
+}
+
+.main-page_info-description {
+  flex-grow: 1;
+  background-color: #3f474d;
+  border-radius: 4px;
+  padding: 50px;
+  color: #ffff;
+  font-size: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -62,6 +130,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
