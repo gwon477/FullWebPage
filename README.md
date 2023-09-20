@@ -1,3 +1,4 @@
+# 팀 홈페이지를 제작하는 전 과정
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
